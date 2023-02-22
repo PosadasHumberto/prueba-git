@@ -1,0 +1,25 @@
+<div class="form-group">
+
+  <label for="inputA">Operando A</label>
+  <input
+    type="number"
+    class="form-control"
+    id="inputA"
+    [(ngModel)]="a"><!--con 2 way binding guarda el valor
+    que tiene este input en el atributo a-->
+
+  <label for="inputb">Operando B</label>
+  <input
+    type="number"
+    class="form-control"
+    id="inputb"
+    [(ngModel)]="b"><!--con 2 way binding guarda el valor
+    que tiene este input en el atributo b-->
+
+  <button
+    class="btn btn-primary my-3"
+    (click)="obtener()"><!--al hacer clic en el boton se ejecuta el metodo obtener()-->
+    Sumar
+  </button>
+
+</div>
